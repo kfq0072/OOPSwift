@@ -15,7 +15,7 @@
 		752FE97D1B5B708C00DE0C64 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 752FE97B1B5B708C00DE0C64 /* LaunchScreen.xib */; };
 		752FE9891B5B708C00DE0C64 /* OOPSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752FE9881B5B708C00DE0C64 /* OOPSwiftTests.swift */; };
 		752FE9931B5B70A900DE0C64 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752FE9921B5B70A900DE0C64 /* Person.swift */; };
-		752FE9981B5B76D100DE0C64 /* myOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 752FE9971B5B76D100DE0C64 /* myOC.m */; };
+		752FE9981B5B76D100DE0C64 /* MyOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 752FE9971B5B76D100DE0C64 /* MyOC.m */; };
 		756874BA1C37EC9D00ED344B /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756874B91C37EC9D00ED344B /* Function.swift */; };
 		756874BC1C37FAE400ED344B /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756874BB1C37FAE400ED344B /* Generics.swift */; };
 		7598737D1C37643800884A9B /* myExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598737C1C37643800884A9B /* myExtension.swift */; };
@@ -46,15 +46,14 @@
 		752FE9881B5B708C00DE0C64 /* OOPSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OOPSwiftTests.swift; sourceTree = "<group>"; };
 		752FE9921B5B70A900DE0C64 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		752FE9951B5B76D100DE0C64 /* OOPSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OOPSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		752FE9961B5B76D100DE0C64 /* myOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myOC.h; sourceTree = "<group>"; };
-		752FE9971B5B76D100DE0C64 /* myOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myOC.m; sourceTree = "<group>"; };
+		752FE9961B5B76D100DE0C64 /* MyOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOC.h; sourceTree = "<group>"; };
+		752FE9971B5B76D100DE0C64 /* MyOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOC.m; sourceTree = "<group>"; };
 		756874B91C37EC9D00ED344B /* Function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
 		756874BB1C37FAE400ED344B /* Generics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generics.swift; sourceTree = "<group>"; };
 		756B6BC11C36500E00BBC571 /* simplePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = simplePlayground.playground; sourceTree = "<group>"; };
 		756B6BC21C36508D00BBC571 /* complexPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = complexPlayground.playground; sourceTree = "<group>"; };
 		7598737C1C37643800884A9B /* myExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myExtension.swift; sourceTree = "<group>"; };
 		7598737E1C376B7700884A9B /* MyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProtocol.swift; sourceTree = "<group>"; };
-		75B7BB2E1DB7C116008DCFA7 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,13 +97,12 @@
 			children = (
 				752FE9721B5B708C00DE0C64 /* AppDelegate.swift */,
 				752FE9741B5B708C00DE0C64 /* ViewController.swift */,
-				75B7BB2E1DB7C116008DCFA7 /* MyPlayground.playground */,
 				756B6BC21C36508D00BBC571 /* complexPlayground.playground */,
 				756B6BC11C36500E00BBC571 /* simplePlayground.playground */,
 				752FE9921B5B70A900DE0C64 /* Person.swift */,
 				751BC1F01B6487B90095182F /* CodeMan.swift */,
-				752FE9961B5B76D100DE0C64 /* myOC.h */,
-				752FE9971B5B76D100DE0C64 /* myOC.m */,
+				752FE9961B5B76D100DE0C64 /* MyOC.h */,
+				752FE9971B5B76D100DE0C64 /* MyOC.m */,
 				7598737C1C37643800884A9B /* myExtension.swift */,
 				7598737E1C376B7700884A9B /* MyProtocol.swift */,
 				756874B91C37EC9D00ED344B /* Function.swift */,
@@ -251,7 +249,7 @@
 				751BC1F11B6487B90095182F /* CodeMan.swift in Sources */,
 				752FE9931B5B70A900DE0C64 /* Person.swift in Sources */,
 				756874BC1C37FAE400ED344B /* Generics.swift in Sources */,
-				752FE9981B5B76D100DE0C64 /* myOC.m in Sources */,
+				752FE9981B5B76D100DE0C64 /* MyOC.m in Sources */,
 				7598737D1C37643800884A9B /* myExtension.swift in Sources */,
 				752FE9751B5B708C00DE0C64 /* ViewController.swift in Sources */,
 				752FE9731B5B708C00DE0C64 /* AppDelegate.swift in Sources */,

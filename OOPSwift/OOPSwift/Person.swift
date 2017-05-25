@@ -47,6 +47,6 @@ class Person:NSObject,makeWorkProtocol {
     }
     
     func makeWork() {
-        print("make love ")
+        print("make work")
     }
 }

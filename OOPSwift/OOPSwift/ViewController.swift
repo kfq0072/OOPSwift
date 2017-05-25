@@ -25,16 +25,49 @@ class ViewController: UIViewController {
         
         myCodeMan.marray("huangshuimei")
         myCodeMan.makeWork()
-        self.myOptional()
         
-        print("test extension")
+        testTransfar()
+        testOptional()
+        testExtension()
+        testProtocol()
+        testGenerics()
+        
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    func myOptional(){
+        if (optional != nil)//解包
+        {
+            print(optional!)
+        }
+    }
+    
+    func testTransfar() -> Void {
+        print("******************** 测试oc swift相互调用 *******************")
+        let oc:MyOC = MyOC()
+        oc.transferOCBySwift()
+    }
+    
+    func testOptional() -> Void {
+        print("******************** 可选 *******************")
+        optional = "我是可选"
+        myOptional()
+    }
+    
+    func testExtension() -> Void {
+        print("******************** extension *******************")
         applePhone = MoblePhone();
         let myPhone:MoblePhone = applePhone!;
         myPhone.initMoblePhone(64.0, sign: "apple")
         myPhone.makeCall(12345)
         myPhone.goWeb("http://www.baidu.com")
-        
-        print("test protocol")
+    }
+    
+    func testProtocol() -> Void {
+        print("******************** protocol ******************* ")
         let tom:Worker = Worker();
         tom.initWorker(name: "tome", age: 18, job: "code man")
         tom.doJob(jobName: "codeMan")
@@ -51,7 +84,9 @@ class ViewController: UIViewController {
         for indexP in 0 ..< 3 {
             print(indexP)
         }
-     
+    }
+    
+    func testGenerics() -> Void {
         print("/******************** Generics *******************/")
         let swap = Generics()
         var intA = 10;
@@ -63,23 +98,10 @@ class ViewController: UIViewController {
         var strB = "bbbb";
         let strAB = swap.swapTwoValue(a: &strA, b: &strB)
         print("范型字符串:\(strAB)")
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-       
-    }
-
-    func printSwift()->Void {
-        print("i am swift", terminator: "")
     }
     
-    func myOptional(){
-        if (optional != nil)//解包
-        {
-            print(optional!)
-        }
+    func transferSwiftByOC() -> Void {
+        print("i am swift")
     }
 
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Worker: NSObject, marryWith{
+class Worker: NSObject, marryWithProtocol{//遵守marryWithProtocol
     var name:String?
     var age:Int16?
     var job:String?
@@ -39,7 +39,7 @@ class Worker: NSObject, marryWith{
 }
 
 // MARK: - protocol
-protocol marryWith {
+protocol marryWithProtocol {
     func marryWithPerson(name:String) ->Bool
 }
 

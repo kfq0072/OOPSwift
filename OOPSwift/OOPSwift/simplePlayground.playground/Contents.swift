@@ -3,22 +3,24 @@
 import UIKit
 
 /******************** 字符串 *******************/
-/********************  *******************/
 var string1 = NSString(format: "%@ %@","HELLO","world")
 string1.lowercased
 string1.uppercased
 var str:String = "kfq"
 str.uppercased()
 
-var string2 = "hi, wor;ld"
+var string2 = "hi, wor,ld"
 var strng3:String = "he world"
-
-//string2.components(separatedBy: CharacterSet(','))
+string2.components(separatedBy: ",")
 print(string1.substring(from: 1))//从第几个截取字符串
 print(string1.substring(to: 2))//从第o个截取到第2个字符串
 print(string1.substring(with: NSMakeRange(2, 3)))
 print(string1.hasPrefix("H"))
+print(string1.hasSuffix("e"))
 print(string1.range(of: "HE"))
+let posNum = "123"
+let conNum = Int(posNum)
+
 
 /******************** 数字 *******************/6
 let num:NSNumber = 10000001.100
@@ -29,6 +31,7 @@ num.boolValue
 num.stringValue
 num.int8Value
 num.int64Value
+
 
 
 
@@ -102,7 +105,7 @@ print(reArray);
 
 
 /******************** 字典 *******************/
-var myDic2 :Dictionary = ["company":"hw","address":"bantian","peoples":1000] as [String : Any]
+var myDic2 :Dictionary = ["company":"hw","peoples":1000] as [String : Any]
 myDic2["ccc"] = "bb"
 print(myDic2)
 
@@ -112,12 +115,12 @@ var dic3 = NSMutableDictionary(objects: ["name","age","sex"], forKeys: ["kfq" as
 dic.count
 dic3.count
 dic3["name"]="hsm"
-var myDic = ["khello":"hello","kPath":"path"];
+var myDic = ["kPath":"path"];
 print("myDic:\(myDic)");
 var kDic = myDic;//深拷贝
 kDic["kPath"] = "kValue";
-print("kDic:\(kDic) myDic:\(myDic)");
-
+print("\(kDic)");
+print("\(myDic)");
 myDic.removeValue(forKey: "khello");
 myDic["khello"] = nil;
 print("myDic:\(myDic)");
@@ -140,10 +143,14 @@ set2.intersects(set1 as Set<NSObject>)//判断set2是否是set1的交集
 set2.union(set1 as Set<NSObject>)//union the two set
 
 /******************** 元组 *******************/
+let http200Status = (statusCode:200,description:"ok")
+print("\(http200Status.statusCode)")
+print("\(http200Status.description)")
+
 var unitArray = (1,"aa")
 print("unit is \(unitArray)")
 print("unit 1 is \(unitArray.1)")
-print("unit 0 is \(unitArray.0)", terminator: "")
+print("unit 0 is \(unitArray.0)")
 
 let unitLet = unitArray;
 unitLet.0
@@ -163,8 +170,9 @@ if let test = myOptional {
     print(test)
 }
 var possibleString: String? = "An optional string"
-//possibleString = nil 空不可以被解包，编译会报错
-print(possibleString!)
+//possibleString = nil //空不可以被解包，编译会报错
+print(possibleString!)//需要解包
+
 
 /******************** 隐试可选! *******************/
 /*
@@ -178,7 +186,6 @@ if let testHide = hideOptional {
 }
 
 var optionalString: String? = "Hello"
-optionalString = nil
-print(optionalString);
+print(optionalString!);
 
 
