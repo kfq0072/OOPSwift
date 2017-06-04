@@ -22,7 +22,6 @@ extension Person {
 }
 
 class Person:NSObject,makeWorkProtocol {
-   
     //声明属性－－－成员变量
     var name : String?
     var age : Int?
@@ -49,4 +48,20 @@ class Person:NSObject,makeWorkProtocol {
     func makeWork() {
         print("make work")
     }
+    
+    //循环引用
+    lazy var asHtml:(Void)->String = {
+        [unowned self] in//防止循环引用
+        if  let age = self.age{
+            let ageStr = String(age)
+            return ageStr
+        }
+        else
+        {
+            return "18"
+        }
+    }
 }
+
+
+

@@ -32,6 +32,14 @@ num.stringValue
 num.int8Value
 num.int64Value
 
+/******************** if *******************/6
+var optionalStr:String? = "hello"
+optionalStr = nil
+var optionalName :String? = "John apple"
+var greeing = "hello"
+if let name = optionalName{//做了赋值
+    greeing = "hhhh,\(name)"
+}
 
 
 
@@ -45,7 +53,7 @@ case "c":
 case "e":
     print("e")
 default:
-    print("no one")
+    print("no one") //switch不需要break 程序匹配到子句后，就会退出，但是必须要有default语句
 }
 
 for indexP in 0 ..< 3 {

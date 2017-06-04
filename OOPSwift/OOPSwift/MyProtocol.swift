@@ -110,6 +110,6 @@ enum SimpleEnum:SomeProtocol {
         default:
             self = .on;
         }
-        print("struct protocol\(#function) \(self)")
+        print("enum protocol\(#function) \(self)")
     }
 }

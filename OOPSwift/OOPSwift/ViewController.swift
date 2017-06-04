@@ -61,8 +61,8 @@ class ViewController: UIViewController {
         print("******************** extension *******************")
         applePhone = MoblePhone();
         let myPhone:MoblePhone = applePhone!;
-        myPhone.initMoblePhone(64.0, sign: "apple")
-        myPhone.makeCall(12345)
+        myPhone.initMoblePhone(size: 64.0, sign: "apple")
+        myPhone.makeCall(num: 88)
         myPhone.goWeb("http://www.baidu.com")
     }
     
@@ -102,6 +102,12 @@ class ViewController: UIViewController {
     
     func transferSwiftByOC() -> Void {
         print("i am swift")
+    }
+    
+    func testMyClass() -> Void {
+        let shape = Shape()
+        shape.numberOfSides = Int(100.0)
+        var shapeDes = shape.simpleDes()
     }
 
 }

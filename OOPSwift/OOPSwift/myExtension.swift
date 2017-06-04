@@ -13,18 +13,20 @@ import UIKit
 class MoblePhone {
     var size:Float32?
     var sign:String?
-    func initMoblePhone(_ size:Float32, sign:String){
+    func initMoblePhone(size:Float32, sign:String){
         self.size = size
         self.sign = sign
         
     }
-    func makeCall(_ num:Int64){
+    func makeCall(num:Int){
         print("you call the num is:\(num)")
     }
 }
 // MARK: - extension
 extension MoblePhone {
+    //不能包含property
+//    var phoneName:String?
     func goWeb(_ url:String){
          print("you go to the url is:\(url)")
-    }
+    }    
 }
